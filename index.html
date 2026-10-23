@@ -1,0 +1,1523 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff4f0">
+    <title>Kỷ Niệm Lớp 12A1 | Ninh Thạnh Lợi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #ee8e8e;
+            --primary-dark: #ce626f;
+            --pink: #fff0ee;
+            --peach: #ffe0d1;
+            --bg: #fffaf7;
+            --text: #493638;
+            --muted: #927b7c;
+            --white: #ffffff;
+            --shadow: 0 12px 35px rgba(144, 81, 81, .10);
+            --radius: 22px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Plus Jakarta Sans", sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        button, input, textarea {
+            font: inherit;
+        }
+
+        button, a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid var(--primary-dark);
+            outline-offset: 3px;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 38px;
+        }
+
+        .section-title .eyebrow {
+            color: var(--primary-dark);
+            font-size: .85rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            color: #a94755;
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+            line-height: 1.3;
+            margin: 8px 0 12px;
+        }
+
+        .section-title p {
+            color: var(--muted);
+        }
+
+        .btn {
+            border: 0;
+            border-radius: 50px;
+            background: var(--primary-dark);
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #b74d5b;
+            box-shadow: 0 8px 20px #ce626f35;
+        }
+
+        /* HERO HEADER */
+
+        .hero {
+            min-height: 94vh;
+            min-height: 94svh;
+            padding: 90px 20px 80px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            position: relative;
+            isolation: isolate;
+            background:
+                linear-gradient(135deg, rgba(255,238,235,.91), rgba(255,248,235,.83)),
+                url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "✿";
+            position: absolute;
+            z-index: -1;
+            color: #e88d8b55;
+            font-size: 130px;
+        }
+
+        .hero::before {
+            top: 7%;
+            left: 5%;
+            transform: rotate(-20deg);
+        }
+
+        .hero::after {
+            bottom: 4%;
+            right: 6%;
+            transform: rotate(20deg);
+        }
+
+        .hero-card {
+            width: min(850px, 100%);
+            padding: clamp(28px, 5vw, 60px);
+            border: 1px solid #ffffffbd;
+            border-radius: 34px;
+            background: rgba(255,255,255,.86);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            animation: appear .8s ease both;
+        }
+
+        .school-badge {
+            display: inline-flex;
+            gap: 9px;
+            align-items: center;
+            justify-content: center;
+            padding: 9px 18px;
+            border-radius: 50px;
+            color: #9c3e4a;
+            background: var(--pink);
+            border: 1px solid #f7d2cc;
+            font-size: .88rem;
+            font-weight: 800;
+        }
+
+        .hero h1 {
+            color: #a63d4d;
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            line-height: 1.12;
+            margin: 24px 0 15px;
+            font-weight: 800;
+        }
+
+        .hero-script {
+            color: var(--primary-dark);
+            font-family: "Dancing Script", cursive;
+            font-size: clamp(1.7rem, 4vw, 2.6rem);
+            line-height: 1.35;
+            margin: 12px 0 20px;
+        }
+
+        .hero-description {
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .counter-title {
+            margin-top: 30px;
+            font-weight: 800;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 18px 0 30px;
+        }
+
+        .counter-box {
+            min-width: 85px;
+            padding: 13px 12px;
+            background: white;
+            border: 1px solid #f4d6d0;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px #ad64640c;
+        }
+
+        .counter-number {
+            display: block;
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1.3;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .counter-label {
+            color: var(--muted);
+            font-size: .73rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        /* NAVIGATION */
+
+        .nav {
+            position: sticky;
+            z-index: 100;
+            top: 0;
+            background: #fffaf7ed;
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #f3e1dd;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 12px 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            border-radius: 30px;
+            padding: 9px 15px;
+            color: var(--text);
+            font-weight: 800;
+            font-size: .91rem;
+            transition: .2s;
+        }
+
+        .nav a:hover {
+            background: var(--pink);
+            color: var(--primary-dark);
+        }
+
+        /* GALLERY */
+
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            padding: 10px 17px;
+            border-radius: 30px;
+            border: 1px solid #efc9c4;
+            background: white;
+            color: var(--text);
+            font-weight: 800;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-dark);
+            color: white;
+            border-color: var(--primary-dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .gallery-card {
+            padding: 0;
+            width: 100%;
+            min-width: 0;
+            border: 0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            position: relative;
+            height: 285px;
+            text-align: left;
+            cursor: pointer;
+            background: #f2dddd;
+            box-shadow: var(--shadow);
+            isolation: isolate;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .5s;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 35% 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(transparent, #261518df);
+        }
+
+        .gallery-overlay h3 {
+            font-size: 1.05rem;
+            line-height: 1.4;
+        }
+
+        .gallery-overlay p {
+            margin-top: 5px;
+            font-size: .82rem;
+            opacity: .9;
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 30px;
+            color: var(--muted);
+        }
+
+        /* LIGHTBOX */
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            padding: 22px;
+            background: rgba(22, 14, 18, .94);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.open {
+            display: flex;
+        }
+
+        .lightbox-content {
+            width: min(950px, 100%);
+            text-align: center;
+            position: relative;
+        }
+
+        .lightbox img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            max-height: 76vh;
+            margin: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .lightbox-caption {
+            color: white;
+            margin: 14px auto 0;
+        }
+
+        .lightbox-close,
+        .lightbox-arrow {
+            border: 0;
+            position: absolute;
+            color: white;
+            background: #ffffff22;
+            border-radius: 50%;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            width: 46px;
+            height: 46px;
+            font-size: 1.2rem;
+        }
+
+        .lightbox-close {
+            top: -55px;
+            right: 0;
+        }
+
+        .lightbox-arrow {
+            top: 45%;
+            font-size: 1.4rem;
+        }
+
+        .lightbox-prev { left: -60px; }
+        .lightbox-next { right: -60px; }
+
+        /* TIMELINE */
+
+        .timeline {
+            max-width: 850px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            transform: translateX(-50%);
+            background: #f1c3bc;
+            border-radius: 10px;
+        }
+
+        .timeline-item {
+            width: 50%;
+            padding: 12px 35px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) { left: 0; }
+        .timeline-item:nth-child(even) { left: 50%; }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            top: 27px;
+            right: -9px;
+            border: 4px solid var(--primary-dark);
+            border-radius: 50%;
+            background: white;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -9px;
+        }
+
+        .timeline-card {
+            padding: 23px;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+        }
+
+        .timeline-date {
+            color: var(--primary-dark);
+            font-size: .85rem;
+            font-weight: 800;
+        }
+
+        .timeline-card h3 {
+            font-size: 1.1rem;
+            margin: 7px 0;
+        }
+
+        .timeline-card p {
+            color: var(--muted);
+            font-size: .93rem;
+        }
+
+        /* WISHING WALL */
+
+        .wishing-section {
+            background: #fff0ed;
+            border-radius: 32px;
+            padding: 55px clamp(15px, 4vw, 40px);
+        }
+
+        .wish-form {
+            max-width: 620px;
+            margin: 0 auto 40px;
+            padding: 28px;
+            border-radius: var(--radius);
+            background: white;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #edd9d5;
+            border-radius: 12px;
+            background: #fffcfb;
+            color: var(--text);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-dark);
+            outline-offset: 1px;
+        }
+
+        textarea.form-control {
+            min-height: 115px;
+            resize: vertical;
+        }
+
+        .wish-submit {
+            width: 100%;
+        }
+
+        .wishes-heading {
+            text-align: center;
+            margin: 0 0 22px;
+            color: #a94755;
+        }
+
+        .sticky-notes {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .sticky-note {
+            position: relative;
+            padding: 24px;
+            border-radius: 5px 5px 18px 5px;
+            box-shadow: 0 8px 22px #8a55551a;
+            transform: rotate(-1deg);
+            overflow-wrap: anywhere;
+            transition: transform .2s;
+        }
+
+        .sticky-note:nth-child(even) {
+            transform: rotate(1.2deg);
+        }
+
+        .sticky-note:hover {
+            transform: translateY(-5px) rotate(0);
+        }
+
+        .note-1 { background: #fff2b9; }
+        .note-2 { background: #e1f2ff; }
+        .note-3 { background: #ffe2ed; }
+        .note-4 { background: #e0f7e8; }
+
+        .note-text {
+            font-family: "Dancing Script", cursive;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .note-author {
+            text-align: right;
+            font-weight: 800;
+            margin-top: 14px;
+            font-size: .9rem;
+        }
+
+        .note-date {
+            color: #846d6d;
+            text-align: right;
+            font-size: .77rem;
+            margin-top: 4px;
+        }
+
+        .wish-tools {
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            background: white;
+            color: var(--primary-dark);
+            border: 1px solid #eac1bb;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 80px;
+            padding: 50px 20px 25px;
+            background: #493638;
+            color: white;
+            text-align: center;
+        }
+
+        footer h2 {
+            color: #ffd6c6;
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+        }
+
+        footer p {
+            max-width: 700px;
+            margin: 15px auto 25px;
+            color: #eadcda;
+        }
+
+        .copyright {
+            padding-top: 20px;
+            border-top: 1px solid #ffffff22;
+            color: #d8c4c4;
+            font-size: .83rem;
+        }
+
+        /* MUSIC PLAYER */
+
+        .music-player {
+            position: fixed;
+            z-index: 500;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding: 10px 15px 10px 10px;
+            border: 1px solid #f0c9c2;
+            border-radius: 50px;
+            box-shadow: 0 8px 28px #49363826;
+            background: white;
+        }
+
+        .music-disc {
+            display: grid;
+            place-items: center;
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #33282b;
+            color: white;
+            border: 3px solid var(--primary);
+        }
+
+        .music-player.playing .music-disc {
+            animation: spin 4s linear infinite;
+        }
+
+        .music-title {
+            font-size: .83rem;
+            font-weight: 800;
+        }
+
+        .music-subtitle {
+            font-size: .7rem;
+            color: var(--muted);
+        }
+
+        .music-toggle {
+            border: 0;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--pink);
+            color: var(--primary-dark);
+            cursor: pointer;
+        }
+
+        .toast {
+            position: fixed;
+            z-index: 2000;
+            bottom: 95px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 90%;
+            padding: 13px 20px;
+            border-radius: 14px;
+            background: #493638;
+            color: white;
+            box-shadow: var(--shadow);
+            text-align: center;
+            display: none;
+        }
+
+        .toast.show {
+            display: block;
+            animation: appear .2s ease;
+        }
+
+        .back-top {
+            position: fixed;
+            left: 18px;
+            bottom: 20px;
+            z-index: 400;
+            text-decoration: none;
+            display: grid;
+            place-items: center;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background: white;
+            color: var(--primary-dark);
+            box-shadow: var(--shadow);
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes appear {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 850px) {
+            .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .sticky-notes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .lightbox-prev { left: 8px; }
+            .lightbox-next { right: 8px; }
+        }
+
+        @media (max-width: 600px) {
+            section { padding: 60px 0; }
+            .hero-card { padding: 28px 17px; border-radius: 24px; }
+            .counter { gap: 7px; }
+            .counter-box { min-width: 68px; padding: 10px 7px; }
+            .counter-number { font-size: 1.45rem; }
+            .counter-label { font-size: .64rem; }
+            .nav-inner { gap: 2px; }
+            .nav a { font-size: .78rem; padding: 8px 9px; }
+            .gallery-grid { grid-template-columns: 1fr; gap: 16px; }
+            .gallery-card { height: 270px; }
+            .timeline::before { left: 12px; }
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                left: 0;
+                padding: 10px 0 10px 36px;
+            }
+            .timeline-item::before,
+            .timeline-item:nth-child(even)::before {
+                left: 3px;
+                right: auto;
+            }
+            .sticky-notes { grid-template-columns: 1fr; }
+            .wish-form { padding: 20px 15px; }
+            .music-player { right: 10px; bottom: 10px; gap: 8px; padding-right: 10px; }
+            .music-disc { width: 38px; height: 38px; }
+            .music-title { font-size: .76rem; }
+            .back-top { left: 10px; bottom: 12px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- HERO HEADER -->
+    <header class="hero">
+        <div class="hero-card">
+            <div class="school-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+                THCS &amp; THPT Ninh Thạnh Lợi
+            </div>
+
+            <h1>TẬP THỂ LỚP 12A1</h1>
+
+            <p class="hero-script">
+                "Nơi thanh xuân rực rỡ,<br>
+                mãi là gia đình thứ hai của chúng mình."
+            </p>
+
+            <p class="hero-description">
+                Mỗi nụ cười là một kỷ niệm, mỗi khoảnh khắc là một món quà.
+                Cảm ơn vì chúng ta đã gặp nhau dưới mái trường thân yêu!
+            </p>
+
+            <p class="counter-title">Hành trình gắn bó bên nhau</p>
+
+            <div class="counter" aria-label="Thời gian gắn bó của lớp">
+                <div class="counter-box">
+                    <span class="counter-number" id="days">000</span>
+                    <span class="counter-label">Ngày</span>
+                </div>
+                <div class="counter-box">
+                    <span class="counter-number" id="hours">00</span>
+                    <span class="counter-label">Giờ</span>
+                </div>
+                <div class="counter-box">
+                    <span class="counter-number" id="minutes">00</span>
+                    <span class="counter-label">Phút</span>
+                </div>
+                <div class="counter-box">
+                    <span class="counter-number" id="seconds">00</span>
+                    <span class="counter-label">Giây</span>
+                </div>
+            </div>
+
+            <a href="#gallery" class="btn">
+                Khám phá kỷ niệm
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <nav class="nav" aria-label="Điều hướng chính">
+        <div class="container nav-inner">
+            <a href="#gallery"><i class="fa-regular fa-images"></i> Thư viện ảnh</a>
+            <a href="#timeline"><i class="fa-regular fa-clock"></i> Dòng thời gian</a>
+            <a href="#wishing"><i class="fa-regular fa-heart"></i> Góc lời chúc</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- BỘ SƯU TẬP ẢNH -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-title">
+                    <div class="eyebrow">Our memories</div>
+                    <h2>Khoảnh Khắc Đáng Nhớ</h2>
+                    <p>Những bức ảnh lưu giữ thanh xuân của tập thể 12A1.</p>
+                </div>
+
+                <div class="filters" role="group" aria-label="Lọc ảnh theo chủ đề">
+                    <button class="filter-btn active" data-filter="all">Tất cả</button>
+                    <button class="filter-btn" data-filter="tap-the">Ảnh tập thể</button>
+                    <button class="filter-btn" data-filter="hoat-dong">Hoạt động / Hội thi</button>
+                    <button class="filter-btn" data-filter="hoc-tap">Góc học tập</button>
+                    <button class="filter-btn" data-filter="nu-cuoi">Nụ cười học trò</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid"></div>
+            </div>
+        </section>
+
+        <!-- DÒNG THỜI GIAN -->
+        <section id="timeline" style="background:#fff3ef;">
+            <div class="container">
+                <div class="section-title">
+                    <div class="eyebrow">Our journey</div>
+                    <h2>Dòng Thời Gian Kỷ Niệm</h2>
+                    <p>Cùng nhìn lại những dấu mốc đáng nhớ dưới mái trường.</p>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-date">05/09/2023</div>
+                            <h3><i class="fa-solid fa-school"></i> Ngày đầu nhận lớp</h3>
+                            <p>
+                                Những ánh mắt ngơ ngác, những nụ cười đầu tiên.
+                                Từ những người bạn xa lạ, chúng ta bắt đầu trở thành một tập thể.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-date">Tháng 10/2023</div>
+                            <h3><i class="fa-solid fa-medal"></i> Hội thi đồng diễn thể dục</h3>
+                            <p>
+                                Cùng nhau luyện tập, phối hợp và cố gắng.
+                                Những giây phút trên sân trường trở thành kỷ niệm khó quên.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-date">Tháng 03/2024</div>
+                            <h3><i class="fa-solid fa-leaf"></i> Ngày hội áo bà ba</h3>
+                            <p>
+                                Những bộ áo bà ba, chiếc khăn rằn và nụ cười
+                                rạng rỡ tạo nên một ngày hội đậm chất miền Tây.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-date">Năm học 2025–2026</div>
+                            <h3><i class="fa-solid fa-book-open"></i> Cùng nhau trưởng thành</h3>
+                            <p>
+                                Những giờ học, bài kiểm tra, lần động viên nhau
+                                và những kỷ niệm bình dị dưới mái trường.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-date">Tháng 05/2026</div>
+                            <h3><i class="fa-solid fa-heart"></i> Lễ trưởng thành và tri ân</h3>
+                            <p>
+                                Gửi lời cảm ơn đến thầy cô, trân trọng tình bạn
+                                và mang theo những ước mơ trên hành trình phía trước.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GÓC LỜI CHÚC -->
+        <section id="wishing">
+            <div class="container">
+                <div class="wishing-section">
+                    <div class="section-title">
+                        <div class="eyebrow">Messages from the heart</div>
+                        <h2>Góc Lời Chúc Kỷ Niệm</h2>
+                        <p>
+                            Hãy để lại một lời nhắn để thanh xuân 12A1 luôn được lưu giữ.
+                        </p>
+                    </div>
+
+                    <form class="wish-form" id="wishForm">
+                        <div class="form-group">
+                            <label for="authorName">
+                                <i class="fa-regular fa-user"></i>
+                                Tên hoặc biệt danh của bạn
+                            </label>
+                            <input
+                                class="form-control"
+                                id="authorName"
+                                name="authorName"
+                                type="text"
+                                maxlength="60"
+                                placeholder="Ví dụ: Minh Thư"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wishMessage">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                Lời chúc hoặc kỷ niệm
+                            </label>
+                            <textarea
+                                class="form-control"
+                                id="wishMessage"
+                                name="wishMessage"
+                                maxlength="500"
+                                placeholder="Chúc tập thể 12A1 luôn đoàn kết và thành công..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn wish-submit">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Gửi lời chúc lên bảng
+                        </button>
+                    </form>
+
+                    <h3 class="wishes-heading">
+                        <i class="fa-solid fa-thumbtack"></i>
+                        Những lời nhắn yêu thương
+                    </h3>
+
+                    <div class="sticky-notes" id="stickyNotesGrid"></div>
+
+                    <div class="wish-tools">
+                        <button type="button" class="btn btn-outline" id="resetWishesBtn">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            Khôi phục lời chúc mẫu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Xem ảnh kỷ niệm"
+        aria-hidden="true"
+    >
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Đóng ảnh">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Ảnh trước">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <img id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Ảnh tiếp theo">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- THÔNG BÁO -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- TRÌNH PHÁT NHẠC -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc">
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div>
+            <div class="music-title">Nhạc thanh xuân</div>
+            <div class="music-subtitle" id="musicStatus">Nhấn để phát nhạc</div>
+        </div>
+        <button class="music-toggle" id="musicToggle" aria-label="Phát nhạc">
+            <i class="fa-solid fa-play" id="musicIcon"></i>
+        </button>
+        <audio
+            id="bgMusic"
+            loop
+            preload="none"
+            src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=sweet-piano-112179.mp3"
+        ></audio>
+    </div>
+
+    <a class="back-top" href="#top" aria-label="Về đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h2>LỚP 12A1 – THCS &amp; THPT NINH THẠNH LỢI</h2>
+            <p>
+                "Thanh xuân không chỉ là một quãng thời gian,
+                mà còn là những con người chúng ta đã gặp và những kỷ niệm chúng ta cùng tạo nên."
+            </p>
+            <div class="copyright">
+                © 2026 Kỷ Yếu Điện Tử 12A1. Lưu giữ thanh xuân, trân trọng tình bạn.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        "use strict";
+
+        // =========================================
+        // 1. BỘ ĐẾM THỜI GIAN GẮN BÓ
+        // Ngày bắt đầu: 05/09/2023
+        // =========================================
+
+        const startDate = new Date(2023, 8, 5, 0, 0, 0);
+
+        function updateCounter() {
+            const now = new Date();
+            let diff = Math.max(0, now.getTime() - startDate.getTime());
+
+            const days = Math.floor(diff / 86400000);
+            diff %= 86400000;
+
+            const hours = Math.floor(diff / 3600000);
+            diff %= 3600000;
+
+            const minutes = Math.floor(diff / 60000);
+            const seconds = Math.floor((diff % 60000) / 1000);
+
+            document.getElementById("days").textContent =
+                String(days).padStart(3, "0");
+            document.getElementById("hours").textContent =
+                String(hours).padStart(2, "0");
+            document.getElementById("minutes").textContent =
+                String(minutes).padStart(2, "0");
+            document.getElementById("seconds").textContent =
+                String(seconds).padStart(2, "0");
+        }
+
+        updateCounter();
+        setInterval(updateCounter, 1000);
+
+
+        // =========================================
+        // 2. DỮ LIỆU THƯ VIỆN ẢNH
+        // Thay các URL bằng ảnh thật của lớp bạn.
+        // =========================================
+
+        const photoData = [
+            {
+                url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=85",
+                title: "Khoảnh khắc tập thể",
+                desc: "Lưu giữ những nụ cười bên bạn bè.",
+                category: "tap-the"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1000&q=85",
+                title: "Tình bạn tuổi học trò",
+                desc: "Thanh xuân đẹp hơn khi có nhau.",
+                category: "tap-the"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=85",
+                title: "Góc học tập thân quen",
+                desc: "Những ngày cùng nhau học tập.",
+                category: "hoc-tap"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1000&q=85",
+                title: "Cùng nhau học hỏi",
+                desc: "Chia sẻ bài vở và giúp đỡ bạn bè.",
+                category: "hoc-tap"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85",
+                title: "Dưới mái trường thân yêu",
+                desc: "Nơi lưu giữ nhiều kỷ niệm đẹp.",
+                category: "hoat-dong"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85",
+                title: "Một ngày đến lớp",
+                desc: "Những khoảnh khắc bình dị mỗi ngày.",
+                category: "hoc-tap"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=85",
+                title: "Ngày hội trưởng thành",
+                desc: "Mang theo những ước mơ phía trước.",
+                category: "hoat-dong"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1000&q=85",
+                title: "Nụ cười học trò",
+                desc: "Những phút giây vui vẻ bên nhau.",
+                category: "nu-cuoi"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1000&q=85",
+                title: "Kỷ niệm không quên",
+                desc: "Mỗi bức ảnh là một câu chuyện.",
+                category: "nu-cuoi"
+            }
+        ];
+
+        let visiblePhotos = [...photoData];
+        let currentPhotoIndex = 0;
+
+        const galleryGrid = document.getElementById("galleryGrid");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightboxImg");
+        const lightboxCaption = document.getElementById("lightboxCaption");
+
+        function renderGallery(category = "all") {
+            visiblePhotos = category === "all"
+                ? [...photoData]
+                : photoData.filter(photo => photo.category === category);
+
+            galleryGrid.replaceChildren();
+
+            if (visiblePhotos.length === 0) {
+                const empty = document.createElement("p");
+                empty.className = "empty-state";
+                empty.textContent = "Chưa có hình ảnh thuộc chủ đề này.";
+                galleryGrid.appendChild(empty);
+                return;
+            }
+
+            visiblePhotos.forEach((photo, index) => {
+                const card = document.createElement("button");
+                card.className = "gallery-card";
+                card.type = "button";
+                card.setAttribute("aria-label", "Xem ảnh: " + photo.title);
+
+                const img = document.createElement("img");
+                img.src = photo.url;
+                img.alt = photo.title;
+                img.loading = "lazy";
+                img.onerror = () => {
+                    img.onerror = null;
+                    img.alt = photo.title + " - Không tải được ảnh";
+                    img.style.background = "#efd9d9";
+                };
+
+                const overlay = document.createElement("div");
+                overlay.className = "gallery-overlay";
+
+                const title = document.createElement("h3");
+                title.textContent = photo.title;
+
+                const desc = document.createElement("p");
+                desc.textContent = photo.desc;
+
+                overlay.append(title, desc);
+                card.append(img, overlay);
+                card.addEventListener("click", () => openLightbox(index));
+
+                galleryGrid.appendChild(card);
+            });
+        }
+
+        document.querySelectorAll("[data-filter]").forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll("[data-filter]").forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                button.classList.add("active");
+                renderGallery(button.dataset.filter);
+            });
+        });
+
+
+        // =========================================
+        // 3. LIGHTBOX: PHÓNG TO, ẢNH TRƯỚC / SAU
+        // =========================================
+
+        function showLightboxPhoto() {
+            const photo = visiblePhotos[currentPhotoIndex];
+            if (!photo) return;
+
+            lightboxImg.src = photo.url;
+            lightboxImg.alt = photo.title;
+            lightboxCaption.textContent =
+                photo.title + " — " + photo.desc;
+        }
+
+        function openLightbox(index) {
+            currentPhotoIndex = index;
+            showLightboxPhoto();
+            lightbox.classList.add("open");
+            lightbox.setAttribute("aria-hidden", "false");
+            document.body.style.overflow = "hidden";
+            document.getElementById("lightboxClose").focus();
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove("open");
+            lightbox.setAttribute("aria-hidden", "true");
+            document.body.style.overflow = "";
+            lightboxImg.src = "";
+        }
+
+        function changePhoto(direction) {
+            if (visiblePhotos.length === 0) return;
+
+            currentPhotoIndex =
+                (currentPhotoIndex + direction + visiblePhotos.length)
+                % visiblePhotos.length;
+
+            showLightboxPhoto();
+        }
+
+        document.getElementById("lightboxClose").addEventListener(
+            "click", closeLightbox
+        );
+
+        document.getElementById("lightboxPrev").addEventListener(
+            "click", () => changePhoto(-1)
+        );
+
+        document.getElementById("lightboxNext").addEventListener(
+            "click", () => changePhoto(1)
+        );
+
+        lightbox.addEventListener("click", event => {
+            if (event.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener("keydown", event => {
+            if (!lightbox.classList.contains("open")) return;
+
+            if (event.key === "Escape") closeLightbox();
+            if (event.key === "ArrowLeft") changePhoto(-1);
+            if (event.key === "ArrowRight") changePhoto(1);
+        });
+
+
+        // =========================================
+        // 4. GÓC LỜI CHÚC + LOCALSTORAGE
+        // =========================================
+
+        const STORAGE_KEY = "ky_niem_lop_12a1_wishes";
+
+        const defaultWishes = [
+            {
+                name: "Minh Thư",
+                text: "Chúc tập thể 12A1 luôn đoàn kết, vui vẻ và đạt được những ước mơ của mình!",
+                date: "Lời chúc mẫu"
+            },
+            {
+                name: "Một người bạn",
+                text: "Mong rằng sau này mỗi người một nơi, chúng ta vẫn nhớ về những ngày tháng dưới mái trường Ninh Thạnh Lợi.",
+                date: "Lời chúc mẫu"
+            },
+            {
+                name: "12A1",
+                text: "Cảm ơn vì đã xuất hiện trong thanh xuân của nhau. Chúc tất cả luôn bình an và thành công!",
+                date: "Lời chúc mẫu"
+            }
+        ];
+
+        function readWishes() {
+            try {
+                const data = localStorage.getItem(STORAGE_KEY);
+                if (data === null) return [...defaultWishes];
+
+                const parsed = JSON.parse(data);
+                return Array.isArray(parsed) ? parsed : [...defaultWishes];
+            } catch (error) {
+                console.error("Không đọc được lời chúc đã lưu:", error);
+                return [...defaultWishes];
+            }
+        }
+
+        function saveWishes(wishes) {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(wishes));
+                return true;
+            } catch (error) {
+                console.error("Không thể lưu lời chúc:", error);
+                showToast("Không thể lưu dữ liệu trên trình duyệt này.");
+                return false;
+            }
+        }
+
+        function renderWishes() {
+            const grid = document.getElementById("stickyNotesGrid");
+            grid.replaceChildren();
+
+            const wishes = readWishes();
+            const colors = ["note-1", "note-2", "note-3", "note-4"];
+
+            if (wishes.length === 0) {
+                const empty = document.createElement("p");
+                empty.className = "empty-state";
+                empty.textContent = "Chưa có lời chúc nào. Hãy viết lời chúc đầu tiên nhé!";
+                grid.appendChild(empty);
+                return;
+            }
+
+            [...wishes].reverse().forEach((wish, index) => {
+                const note = document.createElement("article");
+                note.className = "sticky-note " + colors[index % colors.length];
+
+                const message = document.createElement("div");
+                message.className = "note-text";
+                message.textContent = "“" + String(wish.text || "") + "”";
+
+                const author = document.createElement("div");
+                author.className = "note-author";
+                author.textContent = "— " + String(wish.name || "Ẩn danh");
+
+                const date = document.createElement("div");
+                date.className = "note-date";
+                date.textContent = String(wish.date || "");
+
+                note.append(message, author, date);
+                grid.appendChild(note);
+            });
+        }
+
+        document.getElementById("wishForm").addEventListener("submit", event => {
+            event.preventDefault();
+
+            const nameInput = document.getElementById("authorName");
+            const messageInput = document.getElementById("wishMessage");
+
+            const name = nameInput.value.trim();
+            const message = messageInput.value.trim();
+
+            if (!name || !message) {
+                showToast("Vui lòng nhập tên và lời chúc.");
+                return;
+            }
+
+            const date = new Date().toLocaleDateString("vi-VN");
+            const wishes = readWishes();
+
+            wishes.push({
+                name: name,
+                text: message,
+                date: date
+            });
+
+            if (saveWishes(wishes)) {
+                nameInput.value = "";
+                messageInput.value = "";
+                renderWishes();
+                showToast("Đã gửi lời chúc lên bảng kỷ niệm!");
+            }
+        });
+
+        document.getElementById("resetWishesBtn").addEventListener("click", () => {
+            const confirmed = confirm(
+                "Bạn có muốn xóa lời chúc đã lưu và khôi phục các lời chúc mẫu không?"
+            );
+
+            if (!confirmed) return;
+
+            try {
+                localStorage.removeItem(STORAGE_KEY);
+                renderWishes();
+                showToast("Đã khôi phục các lời chúc mẫu.");
+            } catch (error) {
+                showToast("Không thể khôi phục dữ liệu.");
+            }
+        });
+
+
+        // =========================================
+        // 5. THÔNG BÁO TRÊN MÀN HÌNH
+        // =========================================
+
+        let toastTimer;
+
+        function showToast(message) {
+            const toast = document.getElementById("toast");
+            toast.textContent = message;
+            toast.classList.add("show");
+
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+
+
+        // =========================================
+        // 6. TRÌNH PHÁT NHẠC
+        // =========================================
+
+        const bgMusic = document.getElementById("bgMusic");
+        const musicPlayer = document.getElementById("musicPlayer");
+        const musicToggle = document.getElementById("musicToggle");
+        const musicIcon = document.getElementById("musicIcon");
+        const musicStatus = document.getElementById("musicStatus");
+
+        function updateMusicUI(isPlaying) {
+            musicPlayer.classList.toggle("playing", isPlaying);
+            musicIcon.className = isPlaying
+                ? "fa-solid fa-pause"
+                : "fa-solid fa-play";
+
+            musicToggle.setAttribute(
+                "aria-label",
+                isPlaying ? "Tạm dừng nhạc" : "Phát nhạc"
+            );
+
+            musicStatus.textContent = isPlaying
+                ? "Đang phát nhạc"
+                : "Nhấn để phát nhạc";
+        }
+
+        musicToggle.addEventListener("click", async () => {
+            if (!bgMusic.paused) {
+                bgMusic.pause();
+                return;
+            }
+
+            try {
+                await bgMusic.play();
+            } catch (error) {
+                updateMusicUI(false);
+                showToast(
+                    "Không phát được nhạc. Hãy kiểm tra kết nối hoặc thay đường dẫn file nhạc."
+                );
+                console.error("Lỗi phát nhạc:", error);
+            }
+        });
+
+        bgMusic.addEventListener("playing", () => updateMusicUI(true));
+        bgMusic.addEventListener("pause", () => updateMusicUI(false));
+        bgMusic.addEventListener("ended", () => updateMusicUI(false));
+
+
+        // =========================================
+        // 7. KHỞI ĐỘNG TRANG WEB
+        // =========================================
+
+        renderGallery("all");
+        renderWishes();
+        updateMusicUI(false);
+    </script>
+</body>
+</html>
